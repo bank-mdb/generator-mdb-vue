@@ -77,7 +77,7 @@ const copyTemplates=(context)=>{
         context.destinationPath('./src/lang/index.js'),
         params
     );
-    context.isAdmin&&context.fs.copyTpl(
+    context.includeElementUI&&context.fs.copyTpl(
         context.templatePath('./@selections/plugins/element.js'),
         context.destinationPath('./src/plugins/element.js'),
         params
